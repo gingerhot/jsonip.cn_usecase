@@ -24,7 +24,7 @@ The data includes a http client's ip or more detail of Geo/Browser/OS etc.
     }
     ```
 
-### Usecases
+### A webpage example
 
 The "index.html" give an example in a web page where an Ajax used to query the ip info.
 
