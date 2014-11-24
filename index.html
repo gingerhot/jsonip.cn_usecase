@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Jsonip.cn Example</title>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h2 id="info"><h2>
+      <script>
+        $.ajax({
+          url: "http://jsonip.cn/i",
+          dataType: 'json',
+          success: function( resp ) {
+            console.log(resp);
+            var info = "<br>IP 地址：" + resp.ip + "<br>国家：" + resp.country  + "<br>城市：" + resp.city + "<br>系统：" + resp.os + "<br>浏览器：" + resp.browser;
+            $("#info").html(info);
+          }
+        });
+      </script>
+  </body>
+</html>
